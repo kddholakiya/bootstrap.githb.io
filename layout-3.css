@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+a {
+  text-decoration: none;
+}
+.d-flex {
+  margin: 0 auto;
+}
+.navbar-nav li {
+  padding: 0px 30px;
+  color: white !important;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.banner-1 .overlay {
+  opacity: 0.7;
+  background-color: rgb(0, 0, 0);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.banner-1 {
+  background: url(images/b-1-background.jpg);
+  background-image: cover;
+  padding: 300px 0;
+  position: relative;
+}
+.banner-1 .col-8 h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 70px;
+  color: white;
+}
+.banner-1 .col-8 span {
+  color: rgb(255, 123, 0);
+  line-height: 2px;
+}
+.banner-1 .col-8 i {
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+}
+.banner-1 .col-8 {
+  z-index: 1;
+}
+
+/* <!-- ============================banner-2===================== --> */
+
+.banner-2 {
+  background-color: #000000;
+  padding: 100px 0;
+}
+.info {
+  color: grey;
+}
+.banner-2 h2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+.banner-2 span {
+  color: red;
+}
+.banner-2 em {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.banner-2 .b-2-p {
+  font-size: 20px;
+}
+
+/* <!-- ============================banner-3===================== --> */
+
+.banner-3 {
+  background-color: #000000;
+  padding: 100px 0;
+}
+.info {
+  color: grey;
+}
+.banner-3 h2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+.banner-3 span {
+  color: red;
+}
+.banner-3 em {
+  font-size: 23px;
+}
+.banner-3 .b-2-p {
+  font-size: 20px;
+}
+.banner-3 ul li {
+  list-style-type: disclosure-closed;
+}
+
+/* ===================services================== */
+.services {
+  padding: 100px 0;
+}
+
+/* ====================team==================== */
+.team {
+  padding: 100px 0;
+}
+.team h2 {
+  font-size: 40px;
+  color: white;
+}
+.team span {
+  color: red;
+}
+
+/* =====================subscribe================= */
+
+.subscribe {
+  padding: 50px 0;
+}
+.subscribe ul {
+  list-style-type: none;
+}
+.subscribe .text-center {
+  border-radius: 0 !important;
+}
+.subscribe .card-title {
+  padding: 20px 0;
+}
+
+/* <!-- ==============banner-4 accordion================ --> */
+
+.banner-4 {
+  padding: 100px 0;
+}
+
+/* <!-- =====================carousel================================ --> */
+.about-team{
+    padding: 100px 0;
+}
+.carousel-item {
+  height: 400px;
+  font-size: 20px;
+}
+/* <!-- ================================footer=========================== --> */
+footer {
+  padding: 100px 0 50px;
+}
+
+a.nav-link {
+  position: relative;
+}
+a.nav-link::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background: orange;
+  left: -5px;
+  top: -17px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
+a.nav-link:hover::before {
+  top: 17px;
+  opacity: 1;
+}
+a.text-white:hover {
+  color: gray !important;
+  transition: all 0.5s linear;
+}
+.team-info {
+  position: relative;
+}
+.item-content {
+  position: absolute;
+  opacity: 0;
+  top: 70%;
+  left: 13px;
+  right: 12px;
+  background: white;
+  bottom: 0;
+  transition: 0.5s all linear;
+}
+.item-content h5,
+h6 {
+  font-size: 20px;
+  font-style: italic;
+}
+.item-content .icons a {
+  color: black;
+  font-size: 25px;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.item-content .icons a:hover {
+  color: #dc3545;
+}
+.team-info:hover .item-content {
+  opacity: 1;
+  z-index: 1;
+  top: 0;
+}
+
+@media (max-width: 550px) {
+  .banner-1 .col-8 h1 {
+    font-size: 50px;
+  }
+  .team .img-fluid {
+    margin: 20px auto;
+  }
+  .subscribe .text-center {
+    margin: 30px auto;
+  }
+  .carousel-item {
+    height: 350px;
+    font-size: 15px;
+  }
+  .item-content {
+    bottom: 20px;
+    left: 12px;
+  }
+.team-info:hover .item-content {
+    top: 20px;
+}
+}
+@media (max-width: 350px) {
+.carousel-item {
+    height: 420px;
+}
+    
+}
